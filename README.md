@@ -1,5 +1,7 @@
 # mocha-loader-example
 
+An example for [mocha-loader](https://webpack.js.org/loaders/mocha-loader/)
+
 ```bash
 git clone https://github.com/coder-ka/mocha-loader-example
 

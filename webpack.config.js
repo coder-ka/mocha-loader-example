@@ -5,6 +5,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
  * Webpack Configuration
  */
 module.exports = {
+  mode: "production",
+
   entry: {
     // glob.sync("./test/**/*.spec.js")とかでもいい
     test: ["./test/sample1.spec.js", "./test/sample2.spec.js"]
@@ -33,7 +35,9 @@ module.exports = {
       },
       {
         test: /spec\.js$/,
-        use: "mocha-loader",
+        use: {
+          loader: "mocha-loader"
+        },
         exclude: /node_modules/
       }
     ]
